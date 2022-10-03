@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ibalbako <ibalbako@student.42mulhouse.fr>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/03 12:07:05 by ibalbako          #+#    #+#             */
+/*   Updated: 2022/10/03 12:14:02 by ibalbako         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../../include/libft.h"
 
 void	push_min_to_b(t_data *data)
@@ -72,13 +84,11 @@ void	sort_radix(t_data *data)
 	int	i;
 	int	j;
 	int	stack_a_size;
-	int	max_num;
 
 	i = 0;
 	max_bits = 0;
 	stack_a_size = data->stack_a_size;
-	max_num = (data->stack_a_size -1);
-	while ((max_num >> max_bits) != 0)
+	while (((data->stack_a_size -1) >> max_bits) != 0)
 		++max_bits;
 	while (i < max_bits)
 	{

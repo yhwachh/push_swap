@@ -1,12 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ibalbako <ibalbako@student.42mulhouse.fr>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/03 13:07:42 by ibalbako          #+#    #+#             */
+/*   Updated: 2022/10/03 13:08:32 by ibalbako         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <unistd.h>
 
-typedef struct s_stack 
+typedef struct s_stack
 {
 	int				nb;
 	int				index;
@@ -32,7 +43,7 @@ int		ft_isspace(char c);
 int		ft_atoi(const char *str);
 long	ft_atol(const char *str);
 void	ft_bzero(void *s, size_t n);
-int     ft_isdigit(int c);
+int		ft_isdigit(int c);
 void	ft_putstr_fd(char *s, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
